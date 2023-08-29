@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="gamari.app.mappers.NoteMapper">
+    <insert id="create" parameterType="gamari.app.models.Note">
+        INSERT INTO notes (title, content) VALUES (#{title}, #{content})
+    </insert>
+    <select id="findAll" resultType="gamari.app.models.Note">
+        SELECT * FROM notes
+    </select>
+</mapper>
