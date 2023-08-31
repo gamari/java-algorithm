@@ -1,4 +1,3 @@
-@Test
 public class MainTest {
-    
+
 }
